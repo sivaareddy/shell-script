@@ -6,3 +6,8 @@ echo "second argument : $2"
 echo "All arguments as separate word : $@"
 echo "All arguments as a single word : $*"
 echo "Number of arguments : $#"
+
+echo "Enter pin number"
+read PIN_NUMBER
+
+echo "The PIN number is : $PIN_NUMBER"
