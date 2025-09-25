@@ -11,3 +11,12 @@ echo "Enter pin number"
 read PIN_NUMBER
 
 echo "The PIN number is : $PIN_NUMBER"
+
+
+START_TIME=(date +%s)
+
+sleep 10
+
+END_TIME=(date +%s)
+
+echo "scropt executed time : (($START_TIME-$END_TIME))
