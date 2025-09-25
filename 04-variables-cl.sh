@@ -7,19 +7,13 @@ echo "All arguments as separate word : $@"
 echo "All arguments as a single word : $*"
 echo "Number of arguments : $#"
 
-echo "Enter pin number"
-read PIN_NUMBER
 
-echo "The PIN number is : $PIN_NUMBER"
-
-
-START_TIME=(date +%s)
+START_TIME=$(date +%s)
 
 sleep 10
 
-END_TIME=(date +%s)
+END_TIME=$(date +%s)
 
 TOTAL_TIME=$(($END_TIME-$START_TIME))
 
-
-echo "scropt executed time :$TOTAL_TIME "
+echo "Script executed in: $TOTAL_TIME Seconds"
