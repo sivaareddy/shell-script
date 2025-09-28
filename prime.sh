@@ -12,6 +12,7 @@ for((i=2; i*i<=$num; i++)); do
         echo "$num is not prime"
         exit 1
     fi
+    echo "i: $i"
     count=$((count+1))
 done
 
