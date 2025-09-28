@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Please Enter a number"
 read NUMBER
 
 if [ (NUMBER%2) -eq 0 ]; then
