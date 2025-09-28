@@ -10,7 +10,7 @@ count =1
 for((i=2; i*i<=$num; i++)); do
     if [ $(($num % i)) -eq 0 ]; then
         echo "$num is not prime"
-        ((count++))
+        (count++)
         exit 1
     fi
 done
