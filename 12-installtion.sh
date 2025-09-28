@@ -2,31 +2,34 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]; then
-    echo "Please run the script with root previliage"
-    exit 1
+iif [ $USERID -ne 0 ]; then
+    echo "ERROR:: Please run this script with root privelege"
+    exit 1 # failure is other than 0
 fi
 
 dnf install mysql -y
 
-if [ $? -eq 0 ]; then
-    echo "Installtion mysql is success"
+if [ $? -ne 0 ]; then
+    echo "ERROR:: Installing MySQL is failure"
+    exit 1
 else
-    echo "installation mysql is failure"
+    echo "Installing MySQL is SUCCESS"
 fi
 
 dnf install nginx -y
 
-if [ $? -eq 0 ]; then
-    echo "Installtion nginx is success"
+if [ $? -ne 0 ]; then
+    echo "ERROR:: Installing nginx is failure"
+    exit 1
 else
-    echo "installation nginx is failure"
+    echo "Installing nginx is SUCCESS"
 fi
 
 dnf install python3 -y
 
-if [ $? -eq 0 ]; then
-    echo "Installtion python3 is success"
+if [ $? -ne 0 ]; then
+    echo "ERROR:: Installing nginx is failure"
+    exit 1
 else
-    echo "Installtion python3 is failure"
+    echo "Installing nginx is SUCCESS"
 fi
