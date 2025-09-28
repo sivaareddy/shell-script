@@ -12,5 +12,21 @@ dnf install mysql -y
 if [ $? -eq 0 ]; then
     echo "Installtion mysql is success"
 else
-    echo "installation my sql is failure"
+    echo "installation mysql is failure"
+fi
+
+dnf install nginx -y
+
+if [ $? -eq 0 ]; then
+    echo "Installtion nginx is success"
+else
+    echo "installation nginx is failure"
+fi
+
+dnf install python3 -y
+
+if [ $? -eq 0 ]; then
+    echo "Installtion python3 is success"
+else
+    echo "Installtion python3 is failure"
 fi
