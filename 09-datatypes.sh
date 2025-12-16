@@ -9,4 +9,5 @@ echo "sum is ${SUM}"
 
 LEADERS=("Modi","Putin")
 
-echo "all leaders :$LEADERS[@]"
+echo "all leaders :${LEADERS[@]}"
+echo "array start with zero index ${LEADERS[0]}"
